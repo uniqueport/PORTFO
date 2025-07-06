@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santhosh Suresh | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="name"></h1>
+    <p id="tagline"></p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about"></section>
+    <section id="experience"></section>
+    <section id="projects"></section>
+    <section id="skills"></section>
+    <section id="certifications"></section>
+    <section id="contact"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Santhosh Suresh. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('name').textContent = 'Santhosh Suresh';
+    document.getElementById('tagline').textContent = 'Associate Analyst | Workflow Automation | Excel & Power BI';
+
+    document.getElementById('about').innerHTML = `
+      <h2>About Me</h2>
+      <p>Detail-oriented and proactive Associate Analyst with nearly 3 years of experience in administrative support, workflow automation, and stakeholder coordination within IT and financial services.</p>
+    `;
+
+    document.getElementById('experience').innerHTML = `
+      <h2>Experience</h2>
+      <h3>Associate – Analyst @ TCS, Chennai (2022 – Present)</h3>
+      <ul>
+        <li>Handled onboarding and client account setup.</li>
+        <li>Automated documentation with Power Automate.</li>
+        <li>Maintained SOPs, trackers, reports using Excel and SharePoint.</li>
+        <li>Led training sessions for new joiners.</li>
+      </ul>
+    `;
+
+    document.getElementById('projects').innerHTML = `
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Employee Activity Tracker</strong> – Automated daily logs; 50% time saved.</li>
+        <li><strong>File Converter Tool</strong> – Handled multiple file formats; saved 25+ hrs/month.</li>
+      </ul>
+    `;
+
+    document.getElementById('skills').innerHTML = `
+      <h2>Skills</h2>
+      <p>Excel, Power BI, Power Automate, SharePoint, Microsoft Office, Stakeholder Management</p>
+    `;
+
+    document.getElementById('certifications').innerHTML = `
+      <h2>Certifications</h2>
+      <ul>
+        <li>Power BI (Udemy)</li>
+        <li>Excel (Udemy)</li>
+        <li>Business Analyst (LinkedIn Learning – IIBA/PMI)</li>
+        <li>Power Automate (Udemy)</li>
+        <li>PGDCA (Browzone Infotech)</li>
+      </ul>
+    `;
+
+    document.getElementById('contact').innerHTML = `
+      <h2>Contact</h2>
+      <p>Email: santhosh02516@gmail.com</p>
+      <p>Phone: +91 95431 58080</p>
+      <p><a href="https://www.linkedin.com/in/santhosh-suresh-1b7577291">LinkedIn Profile</a></p>
+    `;
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
